@@ -7,7 +7,7 @@ import com.advj.grammar.Stm;
     Representing Assignment Statement
     int a = a + 2;
 */
-class AssignmentStm extends Stm {
+public class AssignmentStm extends Stm {
 
     final public String identifier;
     final public Exp exp;

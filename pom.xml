@@ -7,6 +7,13 @@
   <version>1</version>
   <name>angst</name>
   <url>http://maven.apache.org</url>
+
+  <properties>
+    <java.version>11</java.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -15,4 +22,16 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <build>
+    <plugins>
+    <plugin>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>exec-maven-plugin</artifactId>
+      <configuration>
+        <mainClass>com.advj.App</mainClass>
+      </configuration>
+    </plugin>
+    </plugins>
+  </build>
 </project>

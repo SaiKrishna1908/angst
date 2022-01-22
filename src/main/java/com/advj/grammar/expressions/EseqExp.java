@@ -2,6 +2,8 @@ package com.advj.grammar.expressions;
 
 /*
     TODO: EseqExp
+
+    Sequence of Expressions containing statement and a expression
 */
 
 

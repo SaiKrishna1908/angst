@@ -7,7 +7,7 @@ import com.advj.grammar.Stm;
     Stm -> stm1;
     
 */
-class CompoundStm extends Stm{
+public class CompoundStm extends Stm{
     public Stm stm1;
     public Stm stm2;
 

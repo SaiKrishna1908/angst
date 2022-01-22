@@ -20,15 +20,15 @@ public class OpExp extends Exp {
     public Exp rightExp;
     public int operand;
 
-    public enum OPERATION{
+    public enum Operation{
         PLUS(1),
-        MINUX(2),
+        MINUS(2),
         TIMES(3),
         DIV(4);
 
         int value;
 
-        OPERATION(int value) {
+        Operation(int value) {
             this.value = value;
         }
     }
@@ -39,7 +39,7 @@ public class OpExp extends Exp {
         this.operand = operand;
     }
 
-    public OpExp(Exp lExp, Exp rExp, OPERATION operation) {
+    public OpExp(Exp lExp, Exp rExp, Operation operation) {
         this(lExp, rExp, operation.value);
     }
     
