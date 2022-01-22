@@ -15,7 +15,7 @@ public class App
     public static void main( String[] args )
     {
         /*
-            a = 5 + 3 is compound statement
+            a := 5+3; b := (print(a, a-1), 10*a); print(b)
         */
 
         AssignmentStm assignA = new AssignmentStm("a", new OpExp(new NumExp(5), new NumExp(3), Operation.PLUS));
